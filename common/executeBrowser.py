@@ -1,10 +1,10 @@
 class start_page:
-    def __init__(self,driver,url):
+    def __init__(self,driver):
         self.driver = driver
-        self.url = url
 
-    def navigate(self):
-        self.driver.get(self.url)
+
+    def navigate(self,url):
+        self.driver.get(url)
 
     def maximze(self):
         self.driver.maximize_window()
